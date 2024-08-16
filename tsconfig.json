@@ -18,7 +18,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+
+      // enabling declaration (.d.ts) emit
+    "declaration": true,
+    // optional - in general it's a good practice to decouple declaration files from your actual transpiled JavaScript files
+   "declarationDir": "build/dts",
+   // optional if you're using babel to transpile TS -> JS
+   "emitDeclarationOnly": true
   },
   "include": [
     "src"
