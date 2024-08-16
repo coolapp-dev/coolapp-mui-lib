@@ -1,7 +1,6 @@
 {
   "name": "coolapp-mui-lib",
-  "version": "0.0.1",
-  "private": true,
+  "version": "0.0.3",
   "scripts": {
     "build": "rollup -c",
     "test": "react-scripts test",
@@ -29,7 +28,7 @@
   },
   "main": "./build/index.js",
   "module": "./build/index.es.js",
-  "types": "./build/index.d.ts",
+  "types": "./build/dts/index.d.ts",
   "files": [
     "build"
   ],
