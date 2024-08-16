@@ -1,6 +1,11 @@
 {
   "name": "coolapp-mui-lib",
-  "version": "0.0.3",
+  "version": "0.0.4",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "ssh+git@github.com:coolapp-dev/coolapp-mui-lib.git"
+  },
   "scripts": {
     "build": "rollup -c",
     "test": "react-scripts test",
