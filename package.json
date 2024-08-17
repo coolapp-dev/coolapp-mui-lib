@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "ssh+git@github.com:coolapp-dev/coolapp-mui-lib.git"
+    "url": "git+ssh://git@github.com/coolapp-dev/coolapp-mui-lib.git"
   },
   "scripts": {
     "build": "rollup -c",

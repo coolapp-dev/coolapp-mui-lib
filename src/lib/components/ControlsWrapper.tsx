@@ -9,7 +9,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Typography from '@mui/material/Typography';
 
 import type { SxProps } from '@mui/material';
-
+import HomeIcon from '@mui/icons-material/Home';
 
 type SxPropsMap = Record<string, SxProps>
 
@@ -33,7 +33,7 @@ type ControlsWrapperProps = {
   children?: React.ReactNode
   title: string
   subheader?: string
-  icon: any
+  icon?: any
   expanded: boolean
   expand: () => void,
   sxstyles?: SxPropsMap,
@@ -80,7 +80,7 @@ export const ControlsWrapper = (props: ControlsWrapperProps) => {
   return (
     <Card sx={{ borderRadius: 0, py: 0, px: 1, boxShadow: 0, ...styles.card }}>
       <CardHeader
-        avatar={icon}
+        avatar={icon?icon:<HomeIcon />}
         action={
           //   <IconButton aria-label="settings" onClick={expand} sx={{ mt:1}}>
           //       <ExpandMoreIcon />
