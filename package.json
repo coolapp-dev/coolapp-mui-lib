@@ -1,6 +1,6 @@
 {
   "name": "coolapp-mui-lib",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -41,6 +41,9 @@
     "react": ">=18",
     "react-dom": ">=18"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.6.1",
     "@rollup/plugin-commonjs": "^26.0.1",
@@ -80,6 +83,8 @@
     "@emotion/styled": "^11.13.0",
     "@fontsource/roboto": "^5.0.14",
     "@mui/icons-material": "^5.16.7",
-    "@mui/material": "^5.16.7"
+    "@mui/material": "^5.16.7",
+    "@xstate/react": "^4.1.1",
+    "xstate": "5.17.1"
   }
 }
