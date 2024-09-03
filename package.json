@@ -72,6 +72,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
+    "release-it": "^17.6.0",
     "rollup-plugin-dts": "^6.1.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
@@ -87,5 +88,23 @@
     "@mui/material": "^5.16.7",
     "@xstate/react": "^4.1.1",
     "xstate": "5.17.1"
+  },
+  "release-it": {
+    "git": {
+      "commit": true,
+      "tag": true,
+      "push": true
+    },
+    "github": {
+      "release": true,
+      "releaseName": "Release ${version}",
+      "autoGenerate": true,
+      "preRelease": false,
+      "draft": false
+    },
+    "npm": {
+      "skipChecks": true,
+      "publish": true
+    }
   }
 }
