@@ -1,4 +1,4 @@
 yarn install
 yarn build
-yarn version --minor
+yarn version --patch
 npm publish
