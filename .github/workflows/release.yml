@@ -101,8 +101,8 @@ jobs:
         run: yarn build --silent 2>/dev/null # TODO: resolve "Module level directives cause errors when bundled, 'use client' was ignored."
 
 
-      - name: fix index # check it https://github.com/release-it/release-it/issues/687
-        run: git update-index -q --refresh
+      # - name: fix index # check it https://github.com/release-it/release-it/issues/687
+      #   run: git update-index -q --refresh
 
 
       - name: Release-it
