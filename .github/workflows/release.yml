@@ -100,6 +100,11 @@ jobs:
       - name: Build package
         run: yarn build --silent 2>/dev/null # TODO: resolve "Module level directives cause errors when bundled, 'use client' was ignored."
 
+
+      - name: git status
+        run: git status # debugging error
+
+
       - name: Release-it
         run: | # # -i  ${{ env.release_type }}
           npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
