@@ -37,7 +37,8 @@
   "types": "./build/index.d.ts",
   "files": [
     "build"
-  ],
+  ],  
+
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18"
@@ -46,7 +47,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "devDependencies": {
-    "@chromatic-com/storybook": "^1.6.1",
+    "@chromatic-com/storybook": "^1.9.0",
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.6",
@@ -61,13 +62,13 @@
     "@storybook/react-webpack5": "^8.2.9",
     "@storybook/test": "^8.2.9",
     "@svgr/rollup": "^8.1.0",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
-    "@types/jest": "^27.0.1",
-    "@types/node": "^16.7.13",
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^15.0.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.5.4",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
     "eslint-plugin-storybook": "^0.8.0",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
@@ -78,17 +79,17 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "storybook": "^8.2.9",
-    "typescript": "^4.4.2",
-    "webpack": "^5.93.0"
+    "typescript": "^5.5.4",
+    "webpack": "^5.94.0"
   },
   "dependencies": {
-    "@emotion/react": "^11.13.0",
+    "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@fontsource/roboto": "^5.0.14",
-    "@mui/icons-material": "^5.16.7",
-    "@mui/material": "^5.16.7",
-    "@xstate/react": "^4.1.1",
-    "xstate": "5.17.1"
+    "@mui/icons-material": "^6.0.2",
+    "@mui/material": "^6.0.2",
+    "@xstate/react": "^4.1.2",
+    "xstate": "5.18.1"
   },
   "release-it": {
     "git": {
