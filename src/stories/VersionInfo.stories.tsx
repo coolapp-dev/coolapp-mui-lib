@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Box } from "@mui/material";
-import {VersionInfo} from '..';
+import { VersionInfo } from '..';
 
 const meta: Meta<typeof VersionInfo> = {
   component: VersionInfo,
@@ -18,12 +18,15 @@ const mockVersionInfo = {
 
 export const Single: Story = {
   render: () => {
-    // Mock fetch globally
+    // Mock fetch globally (without Jest)
     global.fetch = () =>
       Promise.resolve({
         ok: true,
+        status: 200,
+        statusText: "OK",
+        headers: new Headers(),
         json: () => Promise.resolve(mockVersionInfo),
-      });
+      } as Response);
 
     return (
       <Box
