@@ -1,7 +1,15 @@
 import React from "react";
 import { useEffect, useState } from 'react';
 import { Card, Divider, CardHeader, CardContent } from '@mui/material';
-import { styled } from '@mui/material/styles';
+
+import {
+  useTheme,
+  createTheme,
+  ThemeProvider,
+  PaletteMode,
+  styled,
+} from '@mui/material/styles';
+
 
 import Collapse from '@mui/material/Collapse';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
@@ -76,11 +84,32 @@ export const ExpandableListItemWithIcon = (props: ExpandableListItemWithIconProp
 
 
 
-
   return (
-    <Card sx={{ borderRadius: 0, py: 0, px: 1, boxShadow: 0, ...styles.card }}>
+
+    <Card
+      sx={[
+        //@ts-ignore
+        (theme) => ({
+          background: theme.palette.background.paper,
+          borderRadius: 0,
+          py: 0,
+          px: 1,
+          boxShadow: 0,
+          ...styles.card 
+          // '&:hover': {
+          //   backgroundColor: theme.palette.action.hover,
+          // },
+        })
+      ]}
+
+
+
+    //  sx={{ borderRadius: 0, py: 0, px: 1, boxShadow: 0, ...styles.card }}
+
+
+    >
       <CardHeader
-        avatar={icon?icon:<HomeIcon />}
+        avatar={icon ? icon : <HomeIcon />}
         action={
           //   <IconButton aria-label="settings" onClick={expand} sx={{ mt:1}}>
           //       <ExpandMoreIcon />
@@ -125,8 +154,8 @@ export const ExpandableListItemWithIcon = (props: ExpandableListItemWithIconProp
         <Divider />
       </Collapse>
     </Card>
+
   );
 }
 
 
- 
