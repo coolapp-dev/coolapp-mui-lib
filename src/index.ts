@@ -8,3 +8,5 @@ export { default as  ErrorAlert } from './lib/components/alerts/ErrorAlert'
 export { ImgMediaCard as SampleCard } from './lib/widgets/cards/sample1/Main'
 
 export { default as  VersionInfo } from './lib/components/VersionInfo'
+
+export { Stat as DemoStat } from './lib/components/demostat/Main'
