@@ -10,16 +10,6 @@ type AspectRatioProps = {
 
 const AspectRatio = (props: AspectRatioProps) => {
     const { children, ratio } = props
-    // const [calculatedRatio, setCa]
-
-
-    // useEffect(()=>{
-
-
-    // },[ratio])
-
-
-
 
     return (
 
