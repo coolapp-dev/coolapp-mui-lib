@@ -12,3 +12,5 @@ export { default as  VersionInfo } from './lib/components/VersionInfo'
 export { Stat as DemoStat } from './lib/components/demostat/Main'
 export { default as ListItemWithOptions } from './lib/components/listitemwithoptions/ListItemWithOptions'
 export { default as SelectContentDemo} from './lib/components/SelectContentDemo'
+
+export { default as FileInput } from './lib/components/FileInput'
