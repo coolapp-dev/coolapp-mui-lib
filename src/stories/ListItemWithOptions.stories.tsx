@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Button, Box, Paper } from "@mui/material";
 import { ListItemWithOptions } from '..'
+import { default as OptionsMenu } from '../lib/components/listitemwithoptions/OptionsMenu'
 
 
 const meta: Meta<typeof ListItemWithOptions> = {
@@ -31,5 +32,25 @@ export const Single: Story = {
 
 		</Box>,
 };
+
+
+export const OptionsMenuDemo: Story = {
+	render: () =>
+
+		<Box
+			sx={{
+
+				maxWidth: "300px",
+				backgroundColor:"background.paper",
+				position:"relative"
+
+			}}
+		>
+			<OptionsMenu open={true} />
+
+		</Box>,
+};
+
+
 
 
