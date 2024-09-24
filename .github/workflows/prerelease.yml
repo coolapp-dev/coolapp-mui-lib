@@ -53,9 +53,17 @@ jobs:
           PR_EXISTS=$(gh pr list --head "$BRANCH_NAME" --json number --jq '. | length')
           echo "pr_exists=$PR_EXISTS" >> $GITHUB_ENV
 
-
-      - name: Run if PR exists
+      - name: Get new commits count
         if: env.pr_exists != '0'
+        id: check_commits
+        run: |
+          base_branch="development"  # Replace with default branch
+          new_commit_count=$(git rev-list --count HEAD ^$base_branch)
+          echo "new_commit_count=$new_commit_count" >> $GITHUB_ENV
+
+      - name: PR exists and has new commits
+        if: >
+          env.pr_exists != '0' && env.new_commit_count != '0'
         run: |
           echo "A PR from this branch already exists. Skipping creation."
 
