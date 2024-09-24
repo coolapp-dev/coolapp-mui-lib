@@ -44,6 +44,10 @@ const StatValue = styled('div', {
   slot: 'value',
 })<{ ownerState: StatOwnerState }>(({ theme }) => ({
   ...theme.typography.h3,
+  background: theme.palette.primary.light,
+  ...theme.applyStyles('dark', {
+    background: theme.palette.primary.dark,
+  }),
 }));
 
 const StatUnit = styled('div', {
