@@ -18,7 +18,7 @@ type FileInputProps =   {
       data: UploadedFile
     )=>void,
     label?:string
-    buttonProps: CustomButtonProps
+    buttonProps?: CustomButtonProps
 }
 
 const buttonDefaults:CustomButtonProps = {
@@ -28,7 +28,7 @@ const buttonDefaults:CustomButtonProps = {
 }
 const FileInputEl = (props:FileInputProps)=> {
 
- const {onChange, label="Upload", buttonProps} = props
+ const {onChange, label="Upload", buttonProps=buttonDefaults} = props
  const ref = useRef<HTMLInputElement>(null!)
 
  useEffect(()=>{
