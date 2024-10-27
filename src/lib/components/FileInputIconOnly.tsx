@@ -6,9 +6,10 @@ import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import AddPhotoAlternateIcon from '@mui/icons-material/AddPhotoAlternate';
 
 
-type UploadedFile = Partial<File> & { url: string }
+export type UploadedFile = Partial<File> & { url: string }
 
-type FileInputProps = {
+
+export type FileInputProps = {
   verbose?: boolean,
   onChange: (
     data: UploadedFile
