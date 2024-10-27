@@ -14,3 +14,4 @@ export { default as ListItemWithOptions } from './lib/components/listitemwithopt
 export { default as SelectContentDemo} from './lib/components/SelectContentDemo'
 
 export { default as FileInput } from './lib/components/FileInput'
+export { default as FileInputIconOnly } from './lib/components/FileInputIconOnly'
