@@ -13,4 +13,5 @@ export { Stat as DemoStat } from './lib/components/demostat/Main'
 export { default as ListItemWithOptions } from './lib/components/listitemwithoptions/ListItemWithOptions'
 export { default as SelectContentDemo} from './lib/components/SelectContentDemo'
 
-export { default as FileInput } from './lib/components/FileInput'
+export { default as FileInput } from './lib/components/FileInput' //TODO: deprecate or fix
+export { default as FileInputIconOnly, type UploadedFile, type FileInputProps } from './lib/components/FileInputIconOnly'
