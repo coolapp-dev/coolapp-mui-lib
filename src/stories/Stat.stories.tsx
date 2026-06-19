@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-webpack5";
 import { Button, Box, Paper } from "@mui/material";
 import { Stat } from '../lib/components/demostat/Main'
 
