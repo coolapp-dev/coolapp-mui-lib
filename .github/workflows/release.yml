@@ -101,22 +101,22 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
       
 
-      - name: Build storybook
-        run: yarn build-storybook
+      # - name: Build storybook
+      #   run: yarn build-storybook
          
         
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v6
+      # - name: Setup Pages
+      #   uses: actions/configure-pages@v6
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v5
-        with:
-          path: './storybook-static'
+      # - name: Upload artifact
+      #   uses: actions/upload-pages-artifact@v5
+      #   with:
+      #     path: './storybook-static'
 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
+      # - name: Deploy to GitHub Pages
+      #   id: deployment
+      #   uses: actions/deploy-pages@v5
 
       # - name: Create Release
       #   id: create_release
