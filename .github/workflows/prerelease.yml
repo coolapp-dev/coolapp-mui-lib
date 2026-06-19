@@ -113,9 +113,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
 
 
-      - name: NPM publish
-        run: |
-          npm publish --tag next
+      # - name: NPM publish
+      #   run: |
+      #     npm publish --tag next
 
 
   
